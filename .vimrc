@@ -1,14 +1,16 @@
 "" let Vundle manage Vundle
 "" required! 
+set tabstop=2 shiftwidth=2 expandtab
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'gmarik/vundle'
+"Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'https://github.com/altercation/vim-colors-solarized.git'
-Bundle 'https://github.com/tomasr/molokai.git'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'https://github.com/altercation/vim-colors-solarized.git'
+Plugin 'https://github.com/tomasr/molokai.git'
 Bundle 'https://github.com/scrooloose/nerdtree.git'
 Bundle 'https://github.com/majutsushi/tagbar.git'
 Bundle 'https://github.com/vim-scripts/taglist.vim.git'
@@ -100,6 +102,7 @@ set t_Co=256
 "Bundle 'scrooloose/nerdtree'
 " \nt                 打开nerdree窗口，在左侧栏显示
 nmap <leader>nt :NERDTree<CR>
+let NERDTreeWinSize=18
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.obj$', '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$', '^\.hg$' ]
 let g:netrw_home='~/bak'
@@ -118,6 +121,7 @@ let Tlist_Show_One_File        = 1             " 只显示当前文件的tags
 let Tlist_Exit_OnlyWindow      = 1             " 如果Taglist窗口是最后一个窗口则退出Vim
 let Tlist_Use_Right_Window     = 1             " 在右侧窗口中显示
 let Tlist_File_Fold_Auto_Close = 1             " 自动折叠
+let Tlist_WinWidth = 20
 "let Tlist_Sort_Type = "name"                   " items in tags sorted by name
 
 "Bundle 'fholgado/minibufexpl.vim'
