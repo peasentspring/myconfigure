@@ -1,0 +1,7 @@
+[user]
+	email = zwj.air\n@gmail.com\n
+	name = Wenjia Zhao
+ [commit]
+	template = /home/spring/.git_commit_template.txt
+[core]
+	editor = vim
